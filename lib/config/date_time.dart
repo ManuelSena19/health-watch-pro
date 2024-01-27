@@ -8,3 +8,13 @@ String introText() {
     return 'Good evening,';
   }
 }
+
+String getTimeOfDayAsset(){
+  int hour = DateTime.now().hour;
+  if(hour < 18 && hour >= 6){
+    return 'assets/day.png';
+  }
+  else{
+    return 'assets/night.png';
+  }
+}
